@@ -6,8 +6,8 @@ Materials for the "Advanced Shiny" course at Swiss Institute of Bioinformatics.
 
 ### Days
 
-Tue, 3 Dec @ University of Lausanne
-Thu, 5 Dec @ University of Zurich
+- Tue, 3 Dec @ University of Lausanne
+- Thu, 5 Dec @ University of Zurich
 
 ### Daily schedule
 
