@@ -11,7 +11,7 @@ Materials for the "Advanced Shiny" course at Swiss Institute of Bioinformatics.
 
 ### Daily schedule
 
-- 09:00 - 10:30 Interactivity in R: From R Markdown to Shiny
+- 09:00 - 10:30 From reproducibility to interactivity
 - 10:30 - 10:45 Coffee break
 - 10:45 - 12:00 Building user interfaces
 - 12:00 - 13:00 Lunch
