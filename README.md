@@ -4,7 +4,7 @@ Materials for the "Advanced Shiny" course at Swiss Institute of Bioinformatics.
 
 ## Getting materials
 
-Go to the [source repo]() and follow one of the options below:
+Go to the [source repo](https://github.com/rstudio-education/advanced-shiny-sib) and follow one of the options below:
 
 - OPTION 1 - Download contents of the repo
 - OPTION 2 - Clone (or fork and clone) repo
