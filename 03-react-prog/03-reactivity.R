@@ -3,6 +3,8 @@ library(shiny)
 library(tidyverse)
 library(DT)
 library(tools)
+
+# Load data --------------------------------------------------------------------
 load("movies.Rdata")
 
 # Define UI --------------------------------------------------------------------
