@@ -18,16 +18,16 @@ Go to the [source repo]() and follow one of the options below:
 
 ### Daily schedule
 
-- 09:00 - 09:10 [Welcome](00-welcome/slides/00-welcome.pdf)
-- 09:10 - 10:00 [From reproducibility to interactivity](01-reproducible-to-interactive/slides/01-reproducible-to-interactive.pdf)
-- 10:00 - 10:30 [Building user interfaces](02-building-ui/slides/02-building-ui.pdf)
+- 09:00 - 09:10 [Welcome](https://rstudio-education.github.io/advanced-shiny-sib/00-welcome/slides/00-welcome.pdf)
+- 09:10 - 10:00 [From reproducibility to interactivity](https://rstudio-education.github.io/advanced-shiny-sib/01-reproducible-to-interactive/slides/01-reproducible-to-interactive.pdf)
+- 10:00 - 10:30 [Building user interfaces](https://rstudio-education.github.io/advanced-shiny-sib/02-building-ui/slides/02-building-ui.pdf)
 - 10:30 - 10:45 Coffee break
-- 10:45 - 12:00 [Building user interfaces (cont.)](02-building-ui/slides/02-building-ui.pdf)
+- 10:45 - 12:00 [Building user interfaces (cont.)](https://rstudio-education.github.io/advanced-shiny-sib/02-building-ui/slides/02-building-ui.pdf)
 - 12:00 - 13:00 Lunch
-- 13:00 - 14:30 [Reactive programming](03-react-prog/slides/03-react-prog.pdf)
-- 14:30 - 15:30 [Modules](04-modules/slides/04-modules.pdf)
+- 13:00 - 14:30 [Reactive programming](https://rstudio-education.github.io/advanced-shiny-sib/03-react-prog/slides/03-react-prog.pdf)
+- 14:30 - 15:30 [Modules](https://rstudio-education.github.io/advanced-shiny-sib/04-modules/slides/04-modules.pdf)
 - 15:30 - 15:45 Coffee break
-- 15:45 - 17:00 [Troubleshooting](05-troubleshooting/slides/05-troubleshooting.pdf)
+- 15:45 - 17:00 [Troubleshooting](https://rstudio-education.github.io/advanced-shiny-sib/05-troubleshooting/slides/05-troubleshooting.pdf)
 
 ## Packages
 
