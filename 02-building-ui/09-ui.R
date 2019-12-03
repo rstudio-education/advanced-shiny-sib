@@ -4,9 +4,8 @@ library(ggplot2)
 library(shinythemes)
 
 # Define UI --------------------------------------------------------------------
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("spacelab"),
   titlePanel("Linked brushing"),
-  shinythemes::themeSelector(),
   fluidRow(
     column(5,
       plotOutput("plot", brush = "brush")
