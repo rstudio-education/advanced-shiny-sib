@@ -2,6 +2,13 @@
 
 Materials for the "Advanced Shiny" course at Swiss Institute of Bioinformatics.
 
+## Getting materials
+
+Go to the [source repo]() and follow one of the options below:
+
+- OPTION 1 - Download contents of the repo
+- OPTION 2 - Clone (or fork and clone) repo
+
 ## Schedule
 
 ### Days
@@ -11,14 +18,15 @@ Materials for the "Advanced Shiny" course at Swiss Institute of Bioinformatics.
 
 ### Daily schedule
 
-- 09:00 - 10:30 From reproducibility to interactivity
+- 09:00 - 10:00 [From reproducibility to interactivity]()
+- 10:00 - 10:30 [Building user interfaces]()
 - 10:30 - 10:45 Coffee break
-- 10:45 - 12:00 Building user interfaces
+- 10:45 - 12:00 [Building user interfaces (cont.)]()
 - 12:00 - 13:00 Lunch
-- 13:00 - 14:30 Reactive programming
-- 14:30 - 15:30 Modules
+- 13:00 - 14:30 [Reactive programming]()
+- 14:30 - 15:30 [Modules]()
 - 15:30 - 15:45 Coffee break
-- 15:45 - 17:00 Troubleshooting
+- 15:45 - 17:00 [Troubleshooting]()
 
 ## Packages
 
