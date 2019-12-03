@@ -18,15 +18,16 @@ Go to the [source repo]() and follow one of the options below:
 
 ### Daily schedule
 
-- 09:00 - 10:00 [From reproducibility to interactivity]()
-- 10:00 - 10:30 [Building user interfaces]()
+- 09:00 - 09:10 [Welcome](00-welcome/slides/00-welcome.pdf)
+- 09:10 - 10:00 [From reproducibility to interactivity](01-reproducible-to-interactive/slides/01-reproducible-to-interactive.pdf)
+- 10:00 - 10:30 [Building user interfaces](02-building-ui/slides/02-building-ui.pdf)
 - 10:30 - 10:45 Coffee break
-- 10:45 - 12:00 [Building user interfaces (cont.)]()
+- 10:45 - 12:00 [Building user interfaces (cont.)](02-building-ui/slides/02-building-ui.pdf)
 - 12:00 - 13:00 Lunch
-- 13:00 - 14:30 [Reactive programming]()
-- 14:30 - 15:30 [Modules]()
+- 13:00 - 14:30 [Reactive programming](03-react-prog/slides/03-react-prog.pdf)
+- 14:30 - 15:30 [Modules](04-modules/slides/04-modules.pdf)
 - 15:30 - 15:45 Coffee break
-- 15:45 - 17:00 [Troubleshooting]()
+- 15:45 - 17:00 [Troubleshooting](05-troubleshooting/slides/05-troubleshooting.pdf)
 
 ## Packages
 
