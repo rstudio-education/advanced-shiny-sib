@@ -9,17 +9,12 @@ movies_module_UI <- function(id) {
 }
 
 # Module server ----------------------------------------------------------------
-movies_module <- function(input, output, session, [add other necessary inputs] ) {
+movies_module_server <- function(input, output, session, [add other necessary inputs] ) {
   
   # Select movies with given title type ----
   ### add UI elements ###
-
   
   # Create scatterplot object the plotOutput function is expecting ----
   ### add plotting code ###
-
-  
-  # Print data table if checked ----
-  ### add data table code ###
   
 }

@@ -10,30 +10,17 @@ movies_module_UI <- function(id) {
 }
 
 # Module server ---------------------------------------------------------------
-movies_module <- function(input, output, session, data, mov_title_type, x, y, z, alpha, size, show_data) {
+movies_module_server <- function(input, output, session, data, mov_title_type, user_inputs) {
   
   # Select movies with given title type ----------------------------------------
   movies_with_type <- reactive({
-    filter(data, title_type == as.character(mov_title_type))
+    filter(data, title_type == mov_title_type)
   })
   
   # Create the scatterplot object the plotOutput function is expecting --------
   output$scatterplot <- renderPlot({
-    ggplot(data = movies_with_type(), aes_string(x = x(), y = y(), color = z())) +
-      geom_point(alpha = alpha(), size = size()) +
-      labs(x = toTitleCase(str_replace_all(x(), "_", " ")),
-           y = toTitleCase(str_replace_all(y(), "_", " ")),
-           color = toTitleCase(str_replace_all(z(), "_", " "))
-      )
+    ggplot(data = movies_with_type(), aes_string(x = user_inputs()$x, y = user_inputs()$y, color = user_inputs()$z)) +
+      geom_point()
   })
-  
-  # Print data table if checked -----------------------------------------------
-  output$moviestable <- DT::renderDataTable(
-    if(show_data()){
-      DT::datatable(data = movies_with_type()[, 1:7], 
-                    options = list(pageLength = 10), 
-                    rownames = FALSE)
-    }
-  )
   
 }

@@ -1,8 +1,6 @@
 # Load packages ----------------------------------------------------------------
 library(shiny)
 library(tidyverse)
-library(DT)
-library(tools)
 
 # Load data and module code ----------------------------------------------------
 load("movies.Rdata")
@@ -12,7 +10,7 @@ source("03-moviesmodule.R")
 ui <- fluidPage(
   
   # Application title ----
-  titlePanel("Movie browser - without modules"),
+  titlePanel("Movie browser - with modules"),
   
   # Sidebar layout with a input and output definitions ----
   sidebarLayout(
@@ -48,24 +46,7 @@ ui <- fluidPage(
                               "MPAA Rating" = "mpaa_rating", 
                               "Critics Rating" = "critics_rating", 
                               "Audience Rating" = "audience_rating"),
-                  selected = "mpaa_rating"),
-      
-      # Set alpha level ----
-      sliderInput(inputId = "alpha", 
-                  label = "Alpha:", 
-                  min = 0, max = 1, 
-                  value = 0.5),
-      
-      # Set point size ----
-      sliderInput(inputId = "size", 
-                  label = "Size:", 
-                  min = 0, max = 5, 
-                  value = 2),
-      
-      # Show data table ----
-      checkboxInput(inputId = "show_data",
-                    label = "Show data table",
-                    value = TRUE)
+                  selected = "mpaa_rating")
       
     ),
     
@@ -86,17 +67,13 @@ ui <- fluidPage(
 # Define -----------------------------------------------------------------------
 server <- function(input, output, session) {
   
-  x     <- reactive(input$x)
-  y     <- reactive(input$y)
-  z     <- reactive(input$z)
-  alpha <- reactive(input$alpha)
-  size  <- reactive(input$size)
-  show_data <- reactive(input$show_data)
+  # Save user inputs as reactive expressions ---
+  user_inputs <- reactive(input)
   
   # Create the scatterplot object the plotOutput function is expecting ----
-  callModule(movies_module, "doc", data = movies, mov_title_type = "Documentary", x, y, z, alpha, size, show_data)
-  callModule(movies_module, "feature", data = movies, mov_title_type = "Feature Film", x, y, z, alpha, size, show_data)
-  callModule(movies_module, "tv", data = movies, mov_title_type = "TV Movie", x, y, z, alpha, size, show_data)
+  callModule(movies_module_server, "doc", data = movies, mov_title_type = "Documentary", user_inputs)
+  callModule(movies_module_server, "feature", data = movies, mov_title_type = "Feature Film", user_inputs)
+  callModule(movies_module_server, "tv", data = movies, mov_title_type = "TV Movie", user_inputs)
   
 }
 
